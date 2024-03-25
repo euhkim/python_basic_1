@@ -26,8 +26,7 @@ def plot_matplotlib():
 
 def main():
     st.title("Data Display st.dataframe()")
-    st.checkbox("Use container width", value=False,
-    key = 'use_container_width')
+    st.checkbox("Use container width", value=False, key = 'use_container_width')
     
     df = load_data()
     st.dataframe(df, use_container_width=True)
